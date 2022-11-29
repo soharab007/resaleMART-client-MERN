@@ -25,7 +25,7 @@ const AddProduct = () => {
 
         console.log(productInfo);
 
-        fetch('http://localhost:5000/myProducts', {
+        fetch('https://assignment-12-server-blue.vercel.app/myProducts', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(productInfo)

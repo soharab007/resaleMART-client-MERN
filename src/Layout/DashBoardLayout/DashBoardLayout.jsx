@@ -9,7 +9,7 @@ const DashBoardLayout = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/users?email=${user?.email}`, {
+        fetch(`https://assignment-12-server-blue.vercel.app/users?email=${user?.email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }

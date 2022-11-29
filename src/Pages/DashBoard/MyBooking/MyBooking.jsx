@@ -11,7 +11,7 @@ const MyBooking = () => {
     const { data: bookings = [], isLoading, refetch } = useQuery({
         queryKey: ['bookings'],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/bookings?email=${user?.email}`)
+            const res = await fetch(`https://assignment-12-server-blue.vercel.app/bookings?email=${user?.email}`)
             const data = await res.json();
             return data
         }
@@ -19,7 +19,7 @@ const MyBooking = () => {
 
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://assignment-12-server-blue.vercel.app/bookings/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

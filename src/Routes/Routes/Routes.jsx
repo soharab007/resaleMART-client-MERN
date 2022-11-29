@@ -33,7 +33,7 @@ const router = createBrowserRouter([
                     <SingleCategory></SingleCategory>
                 </PrivateRoute>,
                 loader: ({ params }) =>
-                    fetch(`http://localhost:5000/products/${params.id}`)
+                    fetch(`https://assignment-12-server-blue.vercel.app/products/${params.id}`)
             },
             {
                 path: '/blogs',
