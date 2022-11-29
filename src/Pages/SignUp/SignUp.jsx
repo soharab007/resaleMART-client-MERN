@@ -151,7 +151,7 @@ const SignUp = () => {
                     {signUpError && <p className='text-red-600'>{signUpError}</p>}
                     {/* <Toaster /> */}
                 </form>
-                <p>Already have an account <Link className='text-secondary' to="/login">Please Login</Link></p>
+                <p>Already have an account? <Link className='text-secondary' to="/login">Please Login</Link></p>
                 <div className="divider">OR</div>
                 <button
                     onClick={() => handleGoogleSign()}
