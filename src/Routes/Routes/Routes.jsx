@@ -13,6 +13,8 @@ import AllBuyer from "../../Pages/DashBoard/AllBuyer/AllBuyer";
 import AllSeller from "../../Pages/DashBoard/AllSeller/AllSeller";
 import MyBooking from "../../Pages/DashBoard/MyBooking/MyBooking";
 import MyProducts from "../../Pages/DashBoard/MyProducts/MyProducts";
+import ReportedProducts from "../../Pages/DashBoard/ReportedProducts/ReportedProducts";
+import ReportedSeller from "../../Pages/DashBoard/ReportedSeller/ReportedSeller";
 
 
 const router = createBrowserRouter([
@@ -27,10 +29,9 @@ const router = createBrowserRouter([
             },
             {
                 path: '/category/:id',
-                element:
-                    <PrivateRoute>
-                        <SingleCategory></SingleCategory>
-                    </PrivateRoute>,
+                element: <PrivateRoute>
+                    <SingleCategory></SingleCategory>
+                </PrivateRoute>,
                 loader: ({ params }) =>
                     fetch(`http://localhost:5000/products/${params.id}`)
             },
@@ -75,7 +76,15 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/allseller',
                 element: <AllSeller></AllSeller>
-            }
+            },
+            {
+                path: '/dashboard/reportedproducts',
+                element: <ReportedProducts></ReportedProducts>
+            },
+            {
+                path: '/dashboard/reportedsellers',
+                element: <ReportedSeller></ReportedSeller>
+            },
         ]
     }
 
