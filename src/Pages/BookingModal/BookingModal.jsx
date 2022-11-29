@@ -25,7 +25,7 @@ const BookingModal = ({ modalData, }) => {
             price: price,
         }
 
-        fetch('https://assignment-12-server-blue.vercel.app/bookings', {
+        fetch('https://my-mirraw-server.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

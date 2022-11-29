@@ -7,7 +7,7 @@ const Advertised = () => {
     const { data: advertised = [], refetch, isLoading } = useQuery({
         queryKey: ['advertised'],
         queryFn: async () => {
-            const res = await fetch(`https://assignment-12-server-blue.vercel.app/advertised`)
+            const res = await fetch(`https://my-mirraw-server.vercel.app/advertised`)
             const data = await res.json();
             return data
         }
