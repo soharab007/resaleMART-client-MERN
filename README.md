@@ -11,4 +11,10 @@ This is the top class online resail platform in the world. In this platform you 
 *There are extra facility for the buyer and seller.
 *The private router are used to protect products secret . Without login people can't get access from the content.
    ------Thanks a lot
-### Live website link: https://assignment-12-f0e53.web.app/
+
+   
+### Live website link:  https://moonlit-platypus-df571b.netlify.app/
+
+adminEmail: theadmin@gmail.com
+
+adminPassword: THEadmin1$%
